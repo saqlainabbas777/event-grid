@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -27,8 +39,14 @@ input, fieldset, textarea {
   border-radius: 0.5rem;
 }
 
-:root {
-  font-size: 62.5%;
+.container {
+  display: grid;
+  grid-template-columns: [container-start] repeat(12, minmax(min-content, 12.5rem)) [container-end];
+  justify-content: center;
+}
+
+.overall-layout {
+  grid-column: container-start/container-end;
 }
 
 /*# sourceMappingURL=main-style.css.map */
