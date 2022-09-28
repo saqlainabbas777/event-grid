@@ -9,6 +9,12 @@
     padding: pad.padding-d-v(sc) pad.padding-d-h(s);
   }
 
+  .responsive-grid {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+
+
   //----------------------------------------- Header
   .header {
     &__nav {
