@@ -95,6 +95,10 @@
         }
 
         div {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
           p:last-of-type {
             display: flex;
             align-items: center;
@@ -102,6 +106,7 @@
 
             i {
               color: clrs.color-type('3');
+              font-size: type.font-size-st(sc);
             }
           }
         }
