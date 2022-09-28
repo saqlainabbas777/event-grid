@@ -335,6 +335,52 @@ input[type=submit] {
   }
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-image: url("../images/about/about-bg.png");
+  background-color: hsl(238deg, 50%, 13%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__img {
+  flex-basis: 50%;
+  height: 100%;
+}
+.about__content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.about__content--mini-title {
+  color: hsl(0deg, 0%, 100%);
+}
+.about__content--mini-title::before, .about__content--mini-title::after {
+  display: none;
+}
+.about__content--title {
+  text-transform: capitalize;
+}
+.about__content--title, .about__content--para, .about__content--date {
+  color: hsl(0deg, 0%, 100%);
+}
+.about__content--para {
+  text-align: left;
+}
+.about__content--para span {
+  margin-top: 1.5rem;
+}
+.about__content--date span {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: hsl(327deg, 97%, 48%);
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 1100px) {
   .header__nav--links {
     flex-basis: 100%;
