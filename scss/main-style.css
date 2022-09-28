@@ -293,6 +293,28 @@ input[type=submit] {
   .header__hero--location {
     font-size: 1rem;
   }
+  .countdown {
+    padding: 0;
+  }
+  .countdown__content {
+    flex-direction: column;
+    transform: translateY(0);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+  .countdown__content::before, .countdown__content::after {
+    width: 50%;
+  }
+  .countdown__content::after {
+    background-position: right center;
+  }
+  .countdown__content--day, .countdown__content--hour, .countdown__content--minute, .countdown__content--second {
+    flex-direction: column;
+  }
+  .countdown__content--day div p:first-child, .countdown__content--hour div p:first-child, .countdown__content--minute div p:first-child, .countdown__content--second div p:first-child {
+    font-size: calc(2rem + 2.5vw);
+  }
 }
 
 /*# sourceMappingURL=main-style.css.map */

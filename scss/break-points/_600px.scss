@@ -8,8 +8,8 @@
   .padd {
     padding: pad.padding-d-v(sc) pad.padding-d-h(s);
   }
-  //----------------------------------------- Header
 
+  //----------------------------------------- Header
   .header {
     &__nav {
       flex-direction: column;
@@ -95,6 +95,41 @@
     &__hero {
       &--location {
         font-size: type.font-size-st(s);
+      }
+    }
+  }
+
+  //----------------------------------------- Countdown
+  .countdown {
+    padding: 0;
+
+    &__content {
+      flex-direction: column;
+      transform: translateY(0);
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+
+      &::after {
+        background-position: right center;
+      }
+
+      &--day,
+      &--hour,
+      &--minute,
+      &--second {
+        flex-direction: column;
+
+        div {
+          p:first-child {
+            font-size: type.font-size-d(mc);
+          }
+        }
       }
     }
   }
