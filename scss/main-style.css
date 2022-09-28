@@ -369,9 +369,13 @@ input[type=submit] {
 }
 .about__content--para {
   text-align: left;
+  margin-bottom: 0;
 }
 .about__content--para span {
   margin-top: 1.5rem;
+}
+.about__content--date {
+  margin-bottom: 0;
 }
 .about__content--date span {
   display: inline-block;
@@ -488,6 +492,14 @@ input[type=submit] {
   }
   .countdown__content--day div p:first-child, .countdown__content--hour div p:first-child, .countdown__content--minute div p:first-child, .countdown__content--second div p:first-child {
     font-size: calc(2rem + 2.5vw);
+  }
+  .about {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .about__img, .about__content {
+    flex-basis: auto;
+    height: auto;
   }
 }
 

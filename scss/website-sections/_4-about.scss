@@ -46,6 +46,7 @@
 
     &--para {
       text-align: left;
+      margin-bottom: 0;
 
       span {
         margin-top: 1.5rem;
@@ -53,6 +54,7 @@
     }
 
     &--date {
+      margin-bottom: 0;
       span {
         display: inline-block;
         margin-right: 1rem;
