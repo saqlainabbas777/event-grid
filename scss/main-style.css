@@ -902,6 +902,9 @@ input[type=submit] {
     grid-row: 3/4;
     justify-self: center;
   }
+  .footer > div {
+    flex-basis: 30%;
+  }
 }
 @media screen and (max-width: 600px) {
   .padd {
@@ -1022,6 +1025,9 @@ input[type=submit] {
   .events__timing--event__desc div p:last-of-type {
     flex-direction: column;
     gap: 2rem;
+  }
+  .footer > div {
+    flex-basis: 100%;
   }
 }
 
