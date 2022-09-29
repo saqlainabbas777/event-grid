@@ -765,6 +765,21 @@ input[type=submit] {
   background-color: hsl(327deg, 97%, 48%);
 }
 
+.cta {
+  background: linear-gradient(45deg, hsla(253deg, 82%, 42%, 0.9), hsla(327deg, 97%, 48%, 0.7)), url("../images/call-action/call-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cta__mini-title {
+  border: 2px solid hsl(0deg, 0%, 100%);
+}
+.cta__mini-title, .cta__title, .cta__desc {
+  color: hsl(0deg, 0%, 100%);
+}
+.cta__desc {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1100px) {
   .header__nav--links {
     flex-basis: 100%;
