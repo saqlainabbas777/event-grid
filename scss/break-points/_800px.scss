@@ -52,4 +52,14 @@
       }
     }
   }
+
+  // ----------------------------------------- Contact page
+  .contact {
+    flex-wrap: wrap;
+
+    &__content,
+    &__form {
+      flex-basis: 100%;
+    }
+  }
 }
