@@ -42,4 +42,17 @@
       }
     }
   }
+
+  // ----------------------------------------- Blog page
+  .blogs-page .blogs__popular-feeds--content__feed {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+
+    &--img,
+    &--desc,
+    &--date {
+      grid-column: auto/ auto;
+      grid-row: auto / auto;
+    }
+  }
 }
